@@ -1,0 +1,6 @@
+add_library(formatter STATIC formatter.cpp)
+add_library(formatter::formatter ALIAS formatter)
+target_include_directories(formatter PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_features(formatter PUBLIC cxx_std_14)
+install(TARGETS formatter ARCHIVE DESTINATION lib LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
+install(FILES formatter.h DESTINATION include)

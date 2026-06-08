@@ -1,0 +1,6 @@
+add_library(solver STATIC solver.cpp)
+add_library(solver::solver ALIAS solver)
+target_include_directories(solver PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_features(solver PUBLIC cxx_std_14)
+install(TARGETS solver ARCHIVE DESTINATION lib LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
+install(FILES solver.h DESTINATION include)

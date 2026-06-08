@@ -1,0 +1,7 @@
+set(CPACK_PACKAGE_NAME "print")
+set(CPACK_PACKAGE_VENDOR "georgij5920")
+set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
+set(CPACK_PACKAGE_CONTACT "dmkbrn61@gmail.com")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Laboratory work VII")
+set(CPACK_SOURCE_IGNORE_FILES "/_build/;/.git/;/.github/")
+include(CPack)
